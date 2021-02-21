@@ -4,7 +4,7 @@
   "description": "Material da aula de reforço de HTML e CSS.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "light-server -s 'public/' -w 'public/**' -p 3000"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/utfpr-cefwm/reforco-html-css/issues"
   },
-  "homepage": "https://github.com/utfpr-cefwm/reforco-html-css#readme"
+  "homepage": "https://github.com/utfpr-cefwm/reforco-html-css#readme",
+  "dependencies": {
+    "light-server": "^2.9.1"
+  }
 }
