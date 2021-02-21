@@ -35,6 +35,11 @@ a:visited {
   color: #226df8;
 }
 
+.pagina-principal {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
 .placeholder {
   display: inline-block;
   background-color: black;
