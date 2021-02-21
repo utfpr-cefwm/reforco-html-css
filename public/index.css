@@ -63,13 +63,8 @@ main {
 }
 .chamada h3 {
   text-decoration: underline;
-  font-size: 2em;
   color: black;
   margin: 0 0 1em;
-}
-.chamada .imagem {
-  float: left;
-  margin: 0 1em 1em 0;
 }
 .chamada article::before,
 .chamada article::after {
@@ -81,4 +76,29 @@ main {
   float: right;
   text-decoration: underline;
   margin: 0.5em 0 0 1em;
+}
+
+.destaque {
+  margin: 2em;
+}
+.chamada.destaque h3 {
+  font-size: 2.5em;
+}
+.chamada.destaque .imagem {
+  width: 100%;
+}
+.chamada.destaque p {
+  font-size: 1.25em;
+  line-height: 2em;
+}
+
+.chamada.noticia h3 {
+  font-size: 2em;
+}
+.chamada.noticia .imagem {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+.chamada.noticia p {
+  line-height: 1.5em;
 }
