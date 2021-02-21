@@ -1,164 +1,35 @@
-body {
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
-  background-color: #f9f9f9;
+@font-face {
+  font-family: "Playfair Display";
+  src: url('https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiunDXbtM.woff2');
 }
-h1 {
-  margin: 0;
-  background-color: #2781d1;
-  background-image: linear-gradient(to bottom, #2781d1, #148eda);
-  color: #f9f9f9;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
-  text-align: center;
-  font-size: 2em;
-  padding: 0.5em;
-  border-bottom: 1px solid #767676;
+h1, h2, h3, .blog-header-logo {
+  font-family: "Playfair Display", Georgia, 'Times New Roman', Times, serif;
 }
-h2 {
-  color: #3d6989;
-  font-size: 1em;
-  margin: 2em 2em -1em 2em;
-  text-transform: uppercase;
-  font-weight: normal;
+.blog-header-logo {
+  font-size: 1.8em;
 }
-a {
-  color: #2b6de7;
-  text-decoration: underline;
-}
-a:hover,
-a.chamada:hover h3,
-a.chamada:hover .ver-mais {
-  text-decoration: none;
-}
-a:visited {
-  color: #226df8;
-}
-
-.pagina-principal {
-  max-width: 1240px;
-  margin: 0 auto;
-}
-
-.placeholder {
-  display: inline-block;
-  background-color: black;
-  color: white;
-  padding: 1em;
-  box-sizing: border-box;
-  min-height: 3em;
-  min-width: 180px;
-  text-align: center;
-  line-height: 1.5em;
-}
-
-nav {
-  /* background-color: #f9f9f9; */
-  border: 1px solid #d8d8d8;
-  padding: 0;
-  margin: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-nav a {
-  padding: 1em;
-  display: block;
-  background-color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #777777;
-  text-align: center;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-nav a:visited {
-  color: #555555;
-}
-@media only screen and (max-width: 799px) {
-  nav {
-    flex-direction: column;
-  }
-  nav a:not(:last-child) {
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-  }
-}
-@media only screen and (min-width: 800px) {
-  nav {
-    flex-direction: row;
-  }
-  nav a {
-    border-right: 1px solid rgba(0, 0, 0, .1);
-  }
-}
-
-main {
-  padding: 2em;
-}
-
-.chamada {
-  text-decoration: none;
-  background-color: white;
-  padding: 2em;
-  display: block;
-  border: 1px solid #d8d8d8;
-}
-.chamada:not(*:last-child) {
-  margin-bottom: 2em;
-}
-.chamada h3 {
-  text-decoration: underline;
-  color: black;
-  margin: 0 0 1em;
-}
-.chamada .imagem {
-  min-width: 240px;
-}
-.chamada img {
-  width: 100%;
-  object-fit: cover;
-}
-.chamada article::before,
-.chamada article::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.chamada .ver-mais {
-  float: right;
-  text-decoration: underline;
-  margin: 0.5em 0 0 1em;
-}
-
 .destaque {
-  margin: 2em;
+  background-image: url('img/wir-sind-keine-bots.jpg');
+  background-size: cover;
+  background-position: center bottom;
 }
-.chamada.destaque h3 {
-  font-size: 2.5em;
+.destaque > div {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px black;
 }
-.chamada.destaque .imagem {
-  width: 100%;
+@media only screen and (min-width: 768px) {
+  .jumbotron .display-4 {
+    font-size: 3rem;
+  }
 }
-.chamada.destaque img {
-  max-height: 30em;
-}
-.chamada.destaque p {
-  font-size: 1.25em;
-  line-height: 2em;
+@media only screen and (max-width: 767px) {
+  .jumbotron .display-4 {
+    font-size: 2.5rem;
+  }
 }
 
-.chamada.noticia h3 {
-  font-size: 2em;
-}
-.chamada.noticia .imagem {
-  float: left;
-  margin: 0 1em 1em 0;
-  width: 30%;
-}
-.chamada.noticia img {
-  max-height: 20em;
-}
-.chamada.noticia p {
-  line-height: 1.5em;
+.imagem img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }

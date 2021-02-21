@@ -5,90 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reforço HTML+CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>Portal de Notícias</h1>
-    <div class="pagina-principal">
 
-      <h2>Categorias</h2>
-      <nav>
-        <a href="#">Política</a>
-        <a href="#">Religião</a>
-        <a href="#">Esporte</a>
-        <a href="#">Novelas</a>
-        <a href="#">Colunas</a>
-      </nav>
-
-      <h2>Destaque</h2>
-      <a href="#" class="chamada destaque">
-        <article>
-          <h3 class="noticia-titulo">
-            URGENTE: esta notícia está em destaque em relação às outras
-          </h3>
-          <div class="imagem">
-            <img
-              alt="Wir sind keine bots"
-              src="img/wir-sind-keine-bots.jpg"
-            />
+    <div class="container pagina-principal">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-3 pt-1">
+            <a class="text-muted" href="#">
+              Assinar
+            </a>
           </div>
-          <p>
+          <div class="col-5 text-center">
+            <a class="blog-header-logo text-dark" href="#">
+              Portal de Notícias
+            </a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="text-muted" href="#" aria-label="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+            </a>
+            <a class="btn btn-sm btn-outline-secondary" href="#">Log in</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" href="#">Política</a>
+          <a class="p-2 text-muted" href="#">Religião</a>
+          <a class="p-2 text-muted" href="#">Esporte</a>
+          <a class="p-2 text-muted" href="#">Novelas</a>
+          <a class="p-2 text-muted" href="#">Colunas</a>
+        </nav>
+      </div>
+
+      <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark destaque">
+        <div class="col-12 col-lg-8 px-5 py-5">
+          <h1 class="display-4 font-italic">
+            URGENTE: esta notícia está em destaque em relação às outras
+          </h1>
+          <p class="lead my-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             at consectetur quibusdam expedita enim, officiis molestiae ea
             tempora numquam recusandae quia adipisci culpa fuga facere,
             maxime atque praesentium dolorum harum.
           </p>
-          <span class="ver-mais">Ver mais</span>
-        </article>
-      </a>
+          <p class="lead mb-0">
+            <a href="#" class="text-white font-weight-bold">
+              Ver mais
+            </a>
+          </p>
+        </div>
+      </div>
 
-      <h2>Últimas notícias</h2>
-      <main>
-        <a href="#" class="chamada noticia">
-          <article>
-            <h3 class="noticia-titulo">
-              Esta é uma notícia publicada hoje
-            </h3>
-            <div class="imagem">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Política</strong>
+              <h3 class="mb-0">
+                Esta é uma notícia publicada hoje
+              </h3>
+              <div class="mb-1 text-muted">21 Fev</div>
+              <p class="card-text mb-auto">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia nisi aspernatur eligendi, possimus molestiae
+                aliquid blanditiis totam, vitae, qui similique autem
+                harum assumenda nulla repellat? Ratione odit qui iste
+                placeat...
+              </p>
+              <a href="#" class="stretched-link">
+                Ver mais
+              </a>
+            </div>
+            <div class="col-auto imagem">
               <img
                 alt="Urban street art graffiti"
                 src="img/urban-street-art-graffiti.jpg"
                 style="object-position: 10% 20%;"
               />
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Officia nisi aspernatur eligendi, possimus molestiae
-              aliquid blanditiis totam, vitae, qui similique autem
-              harum assumenda nulla repellat? Ratione odit qui iste
-              placeat...
-            </p>
-            <span class="ver-mais">Ver mais</span>
-          </article>
-        </a>
-        <a href="#" class="chamada noticia">
-          <article>
-            <h3 class="noticia-titulo">
-              Outras notícias também são publicadas diariamente
-            </h3>
-            <div class="imagem">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Esportes</strong>
+              <h3 class="mb-0">
+                Outras notícias também são publicadas diariamente
+              </h3>
+              <div class="mb-1 text-muted">21 Fev</div>
+              <p class="mb-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quia, veritatis culpa. Facilis assumenda illo repudiandae
+                nisi pariatur ad voluptas, sapiente minus, tenetur
+                molestias ipsam ipsum ducimus soluta, quod qui
+                consequuntur.
+              </p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto imagem">
               <img
                 alt="Subway metro train tram"
                 src="img/subway-metro-train-tram.jpg"
               />
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quia, veritatis culpa. Facilis assumenda illo repudiandae
-              nisi pariatur ad voluptas, sapiente minus, tenetur
-              molestias ipsam ipsum ducimus soluta, quod qui
-              consequuntur.
-            </p>
-            <span class="ver-mais">Ver mais</span>
-          </article>
-        </a>
-      </main>
-
+          </div>
+        </div>
+      </div>
     </div>
+
   </body>
 </html>
