@@ -47,6 +47,28 @@ a:visited {
   line-height: 1.5em;
 }
 
+nav {
+  /* background-color: #f9f9f9; */
+  border: 1px solid #d8d8d8;
+  padding: 0;
+  margin: 2em;
+}
+nav a {
+  padding: 1em;
+  display: inline-block;
+  background-color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-right: 1px solid rgba(0, 0, 0, .1);
+  color: #777777;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav a:visited {
+  color: #555555;
+}
+
 main {
   padding: 2em;
 }
