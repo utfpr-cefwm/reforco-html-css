@@ -67,14 +67,30 @@ nav a {
   background-color: white;
   text-transform: uppercase;
   text-decoration: none;
-  border-right: 1px solid rgba(0, 0, 0, .1);
   color: #777777;
+  text-align: center;
 }
 nav a:hover {
   text-decoration: underline;
 }
 nav a:visited {
   color: #555555;
+}
+@media only screen and (max-width: 799px) {
+  nav {
+    flex-direction: column;
+  }
+  nav a:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+  }
+}
+@media only screen and (min-width: 800px) {
+  nav {
+    flex-direction: row;
+  }
+  nav a {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+  }
 }
 
 main {
