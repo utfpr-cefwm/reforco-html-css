@@ -28,6 +28,9 @@ h1, h2, h3, .blog-header-logo {
   }
 }
 
+.imagem {
+  max-height: 24em;
+}
 .imagem img {
   object-fit: cover;
   height: 100%;
