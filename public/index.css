@@ -42,7 +42,7 @@ a:visited {
   padding: 1em;
   box-sizing: border-box;
   min-height: 3em;
-  min-width: 12em;
+  min-width: 180px;
   text-align: center;
   line-height: 1.5em;
 }
@@ -91,6 +91,13 @@ main {
   color: black;
   margin: 0 0 1em;
 }
+.chamada .imagem {
+  min-width: 240px;
+}
+.chamada img {
+  width: 100%;
+  object-fit: cover;
+}
 .chamada article::before,
 .chamada article::after {
   content: "";
@@ -112,6 +119,9 @@ main {
 .chamada.destaque .imagem {
   width: 100%;
 }
+.chamada.destaque img {
+  max-height: 30em;
+}
 .chamada.destaque p {
   font-size: 1.25em;
   line-height: 2em;
@@ -123,6 +133,10 @@ main {
 .chamada.noticia .imagem {
   float: left;
   margin: 0 1em 1em 0;
+  width: 30%;
+}
+.chamada.noticia img {
+  max-height: 20em;
 }
 .chamada.noticia p {
   line-height: 1.5em;
