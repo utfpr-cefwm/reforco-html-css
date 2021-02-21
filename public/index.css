@@ -52,10 +52,13 @@ nav {
   border: 1px solid #d8d8d8;
   padding: 0;
   margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 nav a {
   padding: 1em;
-  display: inline-block;
+  display: block;
   background-color: white;
   text-transform: uppercase;
   text-decoration: none;
