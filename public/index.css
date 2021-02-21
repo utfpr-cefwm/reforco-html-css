@@ -28,6 +28,16 @@ h1, h2, h3, .blog-header-logo {
   }
 }
 
+.nav-scroller {
+  overflow-y: hidden;
+  height: 2.5em;
+}
+.nav-scroller nav {
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
 .imagem {
   max-height: 24em;
 }
