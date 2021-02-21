@@ -1,0 +1,23 @@
+{
+  "name": "reforco-html-css",
+  "version": "0.0.0",
+  "description": "Material da aula de reforço de HTML e CSS.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utfpr-cefwm/reforco-html-css.git"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Rui Pimentel Leite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utfpr-cefwm/reforco-html-css/issues"
+  },
+  "homepage": "https://github.com/utfpr-cefwm/reforco-html-css#readme"
+}
